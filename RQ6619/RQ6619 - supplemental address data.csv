@@ -1,0 +1,52 @@
+year,school_ageid,school_name,location_ageid,location_name,address,suburb,postcode,state_territory,source
+2026,564,St Finbarr's School,40564,St Finbarr's School,Betheden Terrace,ASHGROVE,4060,QLD,EFS Progam Admin
+2026,849,Mary Immaculate School,40849,Mary Immaculate School,7-9 Rockbeare Gve,IVANHOE,3079,VIC,EFS Progam Admin
+2026,885,Our Lady of Lourdes School,40885,Our Lady of Lourdes School,23 Orange Gve,BAYSWATER,3153,VIC,EFS Progam Admin
+2026,937,Sacred Heart School,40937,Sacred Heart School,Olive Gve,MILDURA,3500,VIC,EFS Progam Admin
+2026,1007,St Columba's School,41007,St Columba's School,24 Glenhuntly Rd,ELWOOD,3184,VIC,EFS Progam Admin
+2026,1120,St Luke the Evangelist School,41120,St Luke the Evangelist School,46 Orchard Gve,BLACKBURN SOUTH,3130,VIC,EFS Progam Admin
+2026,1144,St Mary's School,41144,St Mary's School,25 Lindenow Road,BAIRNSDALE,3875,VIC,EFS Progam Admin
+2026,2176,Ivanhoe Grammar School,42176,Ivanhoe Grammar School,41 The Ridgeway,IVANHOE,3079,VIC,School Website
+2026,2705,Strelley Community School,42705,Strelley Community School,Warralong Station,PORT HEDLAND,6721,WA,EFS Progam Admin
+2026,4215,Blue Mountains Steiner School,44215,Blue Mountains Steiner School,83 Clearview Parade,HAZELBROOK,2779,NSW,EFS Progam Admin
+2026,4264,Rawa Community School,44264,Rawa Community School,Lake Dora,NEWMAN,6753,WA,EFS Progam Admin
+2026,5346,Central Coast Grammar School,45346,Central Coast Grammar School,Arundel and the Entrance Roads,ERINA HEIGHTS,2260,NSW,EFS Progam Admin
+2026,5625,Birlirr Ngawiyiwu Catholic School,45625,Birlirr Ngawiyiwu Catholic School,Kundat Djaru Community Ringer Soak,HALLS CREEK,6770,WA,EFS Progam Admin
+2026,8870,Christian Aboriginal Parent-Directed School -Kurrawang,48870,Christian Aboriginal Parent-Directed School -Kurrawang,Kurrawang Christian Aboriginal Community,SOUTH KALGOORLIE,6430,WA,EFS Progam Admin
+2026,13289,Parnngurr Community School,53289,Parnngurr Community School,Parnngurr Community School,NEWMAN,6753,WA,EFS Progam Admin
+2026,13310,Our Lady of the Sacred Heart Thamarrur Catholic College,53310,Our Lady of the Sacred Heart Thamarrur Catholic College,1 Perdjert St,WADEYE,0822,NT,School Website
+2026,13311,Ltyentye Apurte Catholic School,53311,Ltyentye Apurte Catholic School,Church St,SANTA TERESA,0872,NT,School Website
+2026,13312,St Francis Xavier Catholic School,53312,St Francis Xavier Catholic School,Nauiyu Community,DALY RIVER,0822,NT,EFS Progam Admin
+2026,13313,Murrurpurtiyanuwu Catholic Primary School,53313,Murrurpurtiyanuwu Catholic Primary School,Puti Dr,BATHURST ISLAND,0822,NT,EFS Progam Admin
+2026,13596,Purnululu Aboriginal Community Independent School,53596,Purnululu Aboriginal Community Independent School,Wurreranginy Community,DURACK,6743,WA,EFS Progam Admin
+2026,13796,Cooloola Christian College,53796,Cooloola Christian College,College Road Southside,GYMPIE,4570,QLD,EFS Progam Admin
+2026,14016,Yakanarra Community School,54016,Yakanarra Community School,50 Mangunampi Road Yakanarra Community,FITZROY CROSSING,6765,WA,EFS Progam Admin
+2026,14320,Mary Mackillop School,54320,Mary Mackillop School,Ernst Wanke & Narre Warren North,NARRE WARREN NORTH,3804,VIC,EFS Progam Admin
+2026,15994,Sathya Sai College,55994,Sathya Sai College,9 Nullum Street,MURWILLUMBAH,2484,NSW,EFS Progam Admin
+2026,16021,Wulungarra Community School,56021,Wulungarra Community School,Kadjina Community Millijidee Station,FITZROY CROSSING,6765,WA,EFS Progam Admin
+2026,16023,Kulkarriya Community School,56023,Kulkarriya Community School,Noonkanbah Station,FITZROY CROSSING,6765,WA,EFS Progam Admin
+2026,16458,John Pujajangka Piyirn School,56458,John Pujajangka Piyirn School,Lake Gregory Station,HALLS CREEK,6770,WA,EFS Progam Admin
+2026,16459,Christ the King Catholic School,56459,Christ the King Catholic School,"Djarindjin, Lombadina",BROOME,6725,WA,EFS Progam Admin
+2026,16461,Kururrungku Catholic Education Centre,56461,Kururrungku Catholic Education Centre,Billiluna Station,HALLS CREEK,6770,WA,EFS Progam Admin
+2026,16462,Ngalangangpum School,56462,Ngalangangpum School,Warmum Community,KUNUNURRA,6743,WA,EFS Progam Admin
+2026,14570,Nyangatjatjara College,56553,Imanpa Primary,Lot 34 Mumu St,IMANPA,0872,NT,"EFS Progam Admin, School Website, Google Maps"
+2026,17285,Nyikina Mangala Community School,57285,Nyikina Mangala Community School,Jarlmadangah Burru Community Mt Anderson Station,DERBY,6728,WA,EFS Progam Admin
+2026,18020,Gawa Christian School,58020,Gawa Christian School,Gawa,CHANNEL ISLAND,0822,NT,EFS Progam Admin
+2026,18220,Unity College,58220,Unity College,"47 Lomond Crescent, Bellvista Estate",CALOUNDRA WEST,4551,QLD,EFS Progam Admin
+2026,26009,St Benedict's Catholic Primary School,66009,St Benedict's Catholic Primary School,1 Laceys Road Pacific Heights,YEPPOON,4703,QLD,EFS Progam Admin
+2026,27652,Tiwi College,67652,Tiwi College,"1 Mantiyupi Road, Pickertaramoor",CHANNEL ISLAND,0822,NT,"EFS Progam Admin, School Website"
+2026,28912,Mapuru Yirralka College,68912,Mapuru Yirralka College,Dhabulu Rd,MAPURU,0822,NT,School Website
+2026,29067,St Andrew's Cathedral Gawura School,69067,St Andrew's Cathedral Gawura School,"Level 7, St Andrew’s House, 474 Kent St, Sydney Square ",SYDNEY,2000,NSW,"EFS Progam Admin, School Website, Google"
+2026,29821,Western Grammar School,69821,Western Grammar School,13 and 15 Cannery Road,PLUMPTON,2761,NSW,EFS Progam Admin
+2026,29932,St Mary of the Cross Catholic Primary School,69932,St Mary of the Cross Catholic Primary School,70 Carrick Street Saltwater Coast Estate,POINT COOK,3030,VIC,EFS Progam Admin
+2026,30236,St Brendan's Catholic Primary School,70236,St Brendan's Catholic Primary School,799 Mackay-Bucasia Road Rural View,MACKAY,4740,QLD,EFS Progam Admin
+2026,2705,Strelley Community School,77250,Strelley Station Campus,Strelley Station,PORT HEDLAND,6721,WA,EFS Progam Admin
+2026,14570,Nyangatjatjara College,77301,Kaltukatjara Primary Campus (Docker River),"4 Tjala Place, Kaltukatjara",PETERMANN,0872,NT,"EFS Progam Admin, School Website, Google"
+2026,4264,Rawa Community School,77361,Kunawarritji Campus,Well 33 Canning Stock Route,NEWMAN,6753,WA,EFS Progam Admin
+2026,1411,Knox Grammar School,77714,Knox Grammar School Preparatory Campus,61 Coonabarra Street,WAHROONGA,2076,NSW,EFS Progam Admin
+2026,87700,Dhupuma Barker,87701,Dhupuma Barker,"Gunyangara, East Arnhem",NHULUNBUY,0880,NT,EFS Progam Admin
+2026,87762,Mamadawerre School - Nawarddeken Academy,87767,Mamadawerre School - Nawarddeken Academy,"Building 6, Mamadawerre Community",TARA,0872,NT,EFS Progam Admin
+2026,87763,Manmoyi School - Nawarddeken Academy,87768,Manmoyi School - Nawarddeken Academy,"Building 6, Manmoyi Community",TARA,0872,NT,EFS Progam Admin
+2026,17708,Australian International Islamic College,88387,Australian International Islamic College  - Logan Campus,494-500 & 502-508 Chambers Flat Road,LOGAN RESERVE,4133,QLD,EFS Progam Admin
+2026,89197,Stromlo Forest Anglican College,89198,Stromlo Forest Anglican College,Admiral Place,WRIGHT,2611,ACT,EFS Progam Admin
+2026,89953,Gamardi School,89954,Gamardi School,"Gamardi Homelands, Maningrida",WEST ARNHEM,0822,NT,EFS Progam Admin

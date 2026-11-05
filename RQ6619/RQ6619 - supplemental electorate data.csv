@@ -1,0 +1,45 @@
+﻿school_ageid,School_Name,Approved_Authority_AGEID,School_Sector,School_Education_Level,School_State,School_Postcode,School_Suburb_Town,electorate,School_ARIA_Value,School_AEA_Remoteness,School_ABS_Remoteness,School_Size,Participated,Reason_not_participate
+15816,Sirius College,,,,,3020,SUNSHINE WEST,Fraser,,,,,,
+63,Carmel Adventist College Primary,4117,Independent,Primary,Western Australia,6076,BICKLEY,Bullwinkel,0.1,Major Cities,Major Cities,Small,Yes,null
+104,Mary's Mount Primary School,86337,Catholic,Primary,Western Australia,6076,GOOSEBERRY HILL,Bullwinkel,0,Major Cities,Major Cities,Small,Yes,null
+105,Mazenod College,29963,Independent,Secondary,Western Australia,6076,LESMURDIE,Bullwinkel,0,Major Cities,Major Cities,Large,Yes,null
+135,Sacred Heart School,86337,Catholic,Primary,Western Australia,6073,MUNDARING,Bullwinkel,0,Major Cities,Major Cities,Small,Yes,null
+141,St Anthony's School,86337,Catholic,Primary,Western Australia,6056,GREENMOUNT,Bullwinkel,0,Major Cities,Major Cities,Large,Yes,null
+189,St Joseph's School,86337,Catholic,Combined,Western Australia,6401,NORTHAM,Bullwinkel,0.8,Major Cities,Inner Regional,Large,Yes,null
+242,Treetops Montessori School,21899,Independent,Combined,Western Australia,6070,DARLINGTON,Bullwinkel,0,Major Cities,Major Cities,Small,Yes,null
+771,Christ the King Primary School,4102,Catholic,Primary,Victoria,3019,BRAYBROOK,Fraser,0,Major Cities,Major Cities,Small,Yes,null
+779,Corpus Christi School,4102,Catholic,Primary,Victoria,3012,KINGSVILLE,Fraser,0,Major Cities,Major Cities,Small,Yes,null
+845,Marian College,4102,Catholic,Secondary,Victoria,3020,SUNSHINE WEST,Fraser,0,Major Cities,Major Cities,Large,Yes,null
+864,Mother of God School,4102,Catholic,Primary,Victoria,3022,ARDEER,Fraser,0,Major Cities,Major Cities,Small,Yes,null
+905,Our Lady of the Immaculate Conception School,4102,Catholic,Primary,Victoria,3020,SUNSHINE,Fraser,0,Major Cities,Major Cities,Large,Yes,null
+941,Sacred Heart School,4102,Catholic,Primary,Victoria,3021,ST ALBANS,Fraser,0,Major Cities,Major Cities,Medium,Yes,null
+966,St Augustine's School,4102,Catholic,Primary,Victoria,3013,YARRAVILLE,Fraser,0,Major Cities,Major Cities,Small,Yes,null
+975,St Bernadette's School,4102,Catholic,Primary,Victoria,3020,SUNSHINE NORTH,Fraser,0,Major Cities,Major Cities,Large,Yes,null
+1046,St John's School,4102,Catholic,Primary,Victoria,3011,FOOTSCRAY WEST,Fraser,inferred,Major Cities,Major Cities,Medium,Yes,null
+1125,St Margaret Mary's School,4102,Catholic,Primary,Victoria,3015,SPOTSWOOD,Fraser,0,Major Cities,Major Cities,Small,Yes,null
+1129,St Margaret's Primary School,4102,Catholic,Primary,Victoria,3032,MARIBYRNONG,Fraser,0,Major Cities,Major Cities,Large,Yes,null
+1198,St Monica's School,4102,Catholic,Primary,Victoria,3011,FOOTSCRAY,Fraser,0,Major Cities,Major Cities,Small,Yes,null
+1224,St Paul's School,4102,Catholic,Primary,Victoria,3020,SUNSHINE WEST,Fraser,0,Major Cities,Major Cities,Large,Yes,null
+1246,St Theresa's School,4102,Catholic,Primary,Victoria,3020,ALBION,Fraser,0,Major Cities,Major Cities,Medium,Yes,null
+1278,Annunciation School,4102,Catholic,Primary,Victoria,3012,BROOKLYN,Fraser,0,Major Cities,Major Cities,Small,Yes,null
+2084,Helena College,20829,Independent,Combined,Western Australia,6071,GLEN FORREST,Bullwinkel,0,Major Cities,Major Cities,Large,Yes,null
+2126,Holy Eucharist School,4102,Catholic,Primary,Victoria,3021,ST ALBANS SOUTH,Fraser,inferred,Major Cities,Major Cities,Large,Yes,null
+2269,Carmel Adventist College,4117,Independent,Combined,Western Australia,6076,CARMEL,Bullwinkel,0.18,Major Cities,Major Cities,Small,Yes,null
+2433,St Paul's Kealba Catholic School,4102,Catholic,Primary,Victoria,3021,KEALBA,Fraser,0,Major Cities,Major Cities,Medium,Yes,null
+2437,Catholic Regional College,4102,Catholic,Secondary,Victoria,3021,ST ALBANS,Fraser,0,Major Cities,Major Cities,Medium,Yes,null
+2473,St Peter's School,4102,Catholic,Primary,Victoria,3020,SUNSHINE SOUTH WEST,Fraser,0,Major Cities,Major Cities,Medium,Yes,null
+2717,Good Shepherd Catholic Primary School,86337,Catholic,Primary,Western Australia,6111,KELMSCOTT,Bullwinkle,0,Major Cities,Major Cities,Small,Yes,null
+2719,HillSide Christian College,22330,Independent,Combined,Western Australia,6058,FORRESTFIELD,Bullwinkel,0,Major Cities,Major Cities,Medium,Yes,null
+2761,Pioneer Village School,21128,Independent,Primary,Western Australia,6112,ARMADALE,Bullwinkle,0,Major Cities,Major Cities,Small,Yes,null
+4017,Sunshine Christian School,88446,Independent,Primary,Victoria,3020,SUNSHINE NORTH,Fraser,0,Major Cities,Major Cities,Small,Yes,null
+8780,Lumen Christi College,86337,Catholic,Secondary,Western Australia,6110,MARTIN,Bullwinkel,0,Major Cities,Major Cities,Large,Yes,null
+13610,Matthew Gibney Catholic Primary School,86337,Catholic,Primary,Western Australia,6057,HIGH WYCOMBE,Bullwinkel,0,Major Cities,Major Cities,Medium,Yes,null
+13740,Mundaring Christian College,13636,Independent,Combined,Western Australia,6073,MUNDARING,Bullwinkel,0,Major Cities,Major Cities,Large,Yes,null
+13867,Kalamunda Christian School,13636,Independent,Primary,Western Australia,6076,WALLISTON,Bullwinkel,0,Major Cities,Major Cities,Small,Yes,null
+14576,Southern Hills Christian College,13636,Independent,Combined,Western Australia,6112,BEDFORDALE,Bullwinkel,0,Major Cities,Major Cities,Medium,Yes,null
+15269,St Brigid's College,29212,Independent,Combined,Western Australia,6076,LESMURDIE,Bullwinkel,0,Major Cities,Major Cities,Large,Yes,null
+15901,Caroline Chisholm Catholic College,4102,Catholic,Secondary,Victoria,3019,BRAYBROOK,Fraser,0,Major Cities,Major Cities,Large,Yes,null
+17162,The Silver Tree Steiner School,21344,Independent,Primary,Western Australia,6081,PARKERVILLE,Bullwinkel,0.06,Major Cities,Major Cities,Small,Yes,null
+18017,Heritage College Perth,25137,Independent,Combined,Western Australia,6058,FORRESTFIELD,Bullwinkel,0,Major Cities,Major Cities,Small,Yes,null
+89488,OakTree College,89487,Independent,Secondary,Victoria,3012,WEST FOOTSCRAY,Fraser,0,Major Cities,Major Cities,null,No,Special assistance school
+90041,BlendED National,4106,Catholic,Secondary,Tasmania,7011,AUSTINS FERRY,Clark,1.86,Inner Regional,Inner Regional,null,No,Special assistance school

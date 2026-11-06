@@ -1,0 +1,38 @@
+WITH fte_by_location AS (
+    SELECT
+        location_ageid,
+        SUM(CAST(fte AS DOUBLE) * CAST(headcount AS DOUBLE)) AS total_fte,
+        SUM(CASE
+            WHEN education_type = 'Distance Education Student'
+            THEN CAST(fte AS DOUBLE) * CAST(headcount AS DOUBLE)
+            ELSE 0
+        END) AS de_fte,
+        SUM(CASE
+            WHEN overseas_student = 'Yes'
+            THEN CAST(fte AS DOUBLE) * CAST(headcount AS DOUBLE)
+            ELSE 0
+        END) AS ffpos_fte,
+        SUM(CASE
+            WHEN education_type = 'Distance Education Student'
+             AND overseas_student = 'Yes'
+            THEN CAST(fte AS DOUBLE) * CAST(headcount AS DOUBLE)
+            ELSE 0
+        END) AS de_ffpos_fte
+    FROM pr_dap_efs.efs_gold.ngc_student_cohort_extract
+    WHERE CalendarYear = 26
+    GROUP BY location_ageid
+)
+SELECT
+    g.AGEID AS school_ageid,
+    g.School_location_AGEID AS location_ageid,
+    g.IsPrimaryLocation AS main_location,
+    COALESCE(
+        f.total_fte - f.de_fte - f.ffpos_fte + f.de_ffpos_fte,
+        0
+    ) AS funded_fte,
+    COALESCE(f.ffpos_fte, 0) AS ffpos_fte
+FROM pr_dap_efs.business_sdpt_nongov_census.schools_geography_2026 AS g
+LEFT JOIN fte_by_location AS f
+    ON CAST(g.School_location_AGEID AS BIGINT) =
+       CAST(f.location_ageid AS BIGINT)
+ORDER BY location_ageid, school_ageid;

@@ -1,38 +1,71 @@
-WITH fte_by_location AS (
+-- Independent source recomputation; no notebook dataframes or views required.
+-- The SQL compute must be able to read the government CSV at the path below.
+-- Expected for the reviewed snapshot: 38 locations (8 non-government, 30 government).
+WITH source_rows AS (
     SELECT
-        location_ageid,
-        SUM(CAST(fte AS DOUBLE) * CAST(headcount AS DOUBLE)) AS total_fte,
-        SUM(CASE
-            WHEN education_type = 'Distance Education Student'
-            THEN CAST(fte AS DOUBLE) * CAST(headcount AS DOUBLE)
-            ELSE 0
-        END) AS de_fte,
-        SUM(CASE
-            WHEN overseas_student = 'Yes'
-            THEN CAST(fte AS DOUBLE) * CAST(headcount AS DOUBLE)
-            ELSE 0
-        END) AS ffpos_fte,
-        SUM(CASE
-            WHEN education_type = 'Distance Education Student'
-             AND overseas_student = 'Yes'
-            THEN CAST(fte AS DOUBLE) * CAST(headcount AS DOUBLE)
-            ELSE 0
-        END) AS de_ffpos_fte
+        'Non-government' AS sector,
+        CAST(location_ageid AS BIGINT) AS location_ageid,
+        CAST(fte AS DOUBLE) * CAST(headcount AS DOUBLE) AS source_fte,
+        education_type = 'Distance Education Student' AS is_de,
+        overseas_student = 'Yes' AS is_ffpos
     FROM pr_dap_efs.efs_gold.ngc_student_cohort_extract
     WHERE CalendarYear = 26
-    GROUP BY location_ageid
+
+    UNION ALL
+
+    SELECT
+        'Government' AS sector,
+        CAST(Location_AGEID AS BIGINT) AS location_ageid,
+        CAST(FTE AS DOUBLE) AS source_fte,
+        DE = 'Yes' AS is_de,
+        `OS_S500(FFPOS)` = 'Yes' AS is_ffpos
+    FROM read_files(
+        'file:/Workspace/Users/dmytro.yalovoy@education.gov.au/Data Requests/RQ6619/2026 - All Schools/GSDS_enrolment_output_ALL_prelim.csv',
+        format => 'csv',
+        header => true
+    )
+), fte_by_location AS (
+    SELECT
+        sector,
+        location_ageid,
+        SUM(source_fte) AS total_fte,
+        COALESCE(SUM(CASE WHEN is_de THEN source_fte END), 0) AS de_fte,
+        COALESCE(SUM(CASE WHEN is_ffpos THEN source_fte END), 0) AS ffpos_fte,
+        COALESCE(SUM(CASE WHEN is_de AND is_ffpos THEN source_fte END), 0) AS de_ffpos_fte
+    FROM source_rows
+    GROUP BY sector, location_ageid
+), combined_df AS (
+    SELECT
+        sector,
+        location_ageid,
+        total_fte - de_fte - ffpos_fte + de_ffpos_fte AS funded_fte,
+        ffpos_fte
+    FROM fte_by_location
+    WHERE NOT (
+        total_fte = 0
+        AND de_fte = 0
+        AND ffpos_fte = 0
+        AND de_ffpos_fte = 0
+        AND total_fte - de_fte - ffpos_fte + de_ffpos_fte = 0
+    )
+), zero_fte AS (
+    SELECT sector, location_ageid, funded_fte, ffpos_fte
+    FROM combined_df
+    WHERE funded_fte = 0 AND ffpos_fte = 0
 )
 SELECT
-    g.AGEID AS school_ageid,
-    g.School_location_AGEID AS location_ageid,
-    g.IsPrimaryLocation AS main_location,
-    COALESCE(
-        f.total_fte - f.de_fte - f.ffpos_fte + f.de_ffpos_fte,
-        0
-    ) AS funded_fte,
-    COALESCE(f.ffpos_fte, 0) AS ffpos_fte
-FROM pr_dap_efs.business_sdpt_nongov_census.schools_geography_2026 AS g
-LEFT JOIN fte_by_location AS f
-    ON CAST(g.School_location_AGEID AS BIGINT) =
-       CAST(f.location_ageid AS BIGINT)
-ORDER BY location_ageid, school_ageid;
+    f.sector,
+    f.location_ageid,
+    f.funded_fte,
+    f.ffpos_fte,
+    (
+        SELECT SORT_ARRAY(COLLECT_SET(CAST(g.AGEID AS BIGINT)))
+        FROM pr_dap_efs.business_sdpt_nongov_census.schools_geography_2026 AS g
+        WHERE CAST(g.School_location_AGEID AS BIGINT) =
+              CAST(f.location_ageid AS BIGINT)
+          AND g.School_location_ClosingDate IS NULL
+          AND g.School_location_EffectiveToDate IS NULL
+          AND g.School_location_StatusID = 1
+    ) AS school_ageids
+FROM zero_fte AS f
+ORDER BY f.location_ageid;
